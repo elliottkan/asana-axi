@@ -1,0 +1,33 @@
+{
+  "name": "asana-axi",
+  "version": "0.1.0",
+  "description": "AXI-compliant CLI wrapper around Asana's official V2 MCP server - token-efficient TOON output for AI coding agents",
+  "type": "module",
+  "keywords": ["asana", "axi", "agent", "cli", "toon", "mcp"],
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/elliottkan/asana-axi.git" },
+  "homepage": "https://github.com/elliottkan/asana-axi#readme",
+  "bugs": "https://github.com/elliottkan/asana-axi/issues",
+  "bin": { "asana-axi": "./dist/bin/asana-axi.js" },
+  "files": ["dist", "skills/asana-axi", "LICENSE", "README.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx bin/asana-axi.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@toon-format/toon": "^2.1.0",
+    "axi-sdk-js": "^0.1.11",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

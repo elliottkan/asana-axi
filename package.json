@@ -1,7 +1,8 @@
 {
-  "name": "asana-axi",
+  "name": "@elliottkan/asana-axi",
   "version": "0.1.0",
   "description": "AXI-compliant CLI wrapper around Asana's official V2 MCP server - token-efficient TOON output for AI coding agents",
+  "publishConfig": { "access": "public" },
   "type": "module",
   "keywords": ["asana", "axi", "agent", "cli", "toon", "mcp"],
   "license": "MIT",
